@@ -1,1 +1,1 @@
-console.log('events js');
+// Attaching all event listeners

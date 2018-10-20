@@ -1,3 +1,1 @@
-console.log('main js');
-
-//$('body').hide();
+// Entry point/start application

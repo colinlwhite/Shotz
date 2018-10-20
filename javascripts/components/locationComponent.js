@@ -1,1 +1,1 @@
-console.log('location components');
+// Writing to the dom for the location components
