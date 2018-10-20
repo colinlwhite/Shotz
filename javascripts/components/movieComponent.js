@@ -1,1 +1,1 @@
-console.log('movie components');
+// Writing to the dom for the movie component

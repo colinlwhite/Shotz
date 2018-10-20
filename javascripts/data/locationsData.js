@@ -1,1 +1,1 @@
-console.log('location data');
+// AJAX call for locations data

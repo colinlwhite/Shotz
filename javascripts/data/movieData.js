@@ -1,1 +1,1 @@
-console.log('movie data');
+// AJAX call for movie data
