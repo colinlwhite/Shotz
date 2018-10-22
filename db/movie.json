@@ -2,9 +2,9 @@
     "movie": [
         {
             "Name": "Training Day",
-            "Genre": "action",
-            "Estimated Release Date": "December 25 2018",
-            "Description": "action packed thriller"
+            "Genre": "Action",
+            "Date": "December 25 2018",
+            "Description": "Action Packed Thriller"
         }
     ]
 }

@@ -1,6 +1,10 @@
 // AJAX call for locations data
 
-$.get('../db/locations.json') 
-.done((data) => {
-    console.log(data);
-});
+const locationData = () => {
+    $.get('../db/locations.json') 
+    .done((data) => {
+        console.log(data.locations);
+    });
+};
+
+export {locationData}
