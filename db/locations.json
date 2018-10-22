@@ -1,34 +1,34 @@
 {
     "locations": [
         {
-            "Location Image": "img to come",
+            "Image": "img to come",
             "Name": "Red Bicyle Coffee",
-            "Location Address": "4013 Whites Drive, Pell City, AL 35128",
-            "Shoot Time": "Morning"
+            "Address": "4013 Whites Drive, Pell City, AL 35128",
+            "Time": "Morning"
         },
         {
-            "Location Image": "img to come",
+            "Image": "img to come",
             "Name": "Red Bicyle Coffee",
-            "Location Address": "4013 Whites Drive, Pell City, AL 35128",
-            "Shoot Time": "Afternoon"
+            "Address": "4013 Whites Drive, Pell City, AL 35128",
+            "Time": "Afternoon"
         },
         {
-            "Location Image": "img to come",
+            "Image": "img to come",
             "Name": "Red Bicyle Coffee",
-            "Location Address": "4013 Whites Drive, Pell City, AL 35128",
-            "Shoot Time": "Evening"
+            "Address": "4013 Whites Drive, Pell City, AL 35128",
+            "Time": "Evening"
         },
         {
-            "Location Image": "img to come",
+            "Image": "img to come",
             "Name": "Red Bicyle Coffee",
-            "Location Address": "4013 Whites Drive, Pell City, AL 35128",
-            "Shoot Time": "After Dark"
+            "Address": "4013 Whites Drive, Pell City, AL 35128",
+            "Time": "After Dark"
         },
         {
-            "Location Image": "img to come",
+            "Image": "img to come",
             "Name": "Red Bicyle Coffee",
-            "Location Address": "4013 Whites Drive, Pell City, AL 35128",
-            "Shoot Time": "Morning"
+            "Address": "4013 Whites Drive, Pell City, AL 35128",
+            "Time": "Morning"
         }
 
 

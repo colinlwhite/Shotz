@@ -9,7 +9,7 @@ const printMovie = (arrayOfMovies) => {
         <h1>${movie.Description}</h1>
         `;
 })
-    $("#testDiv").append(domString);
+    $("#movieDiv").append(domString);
 };
 
 export {printMovie}
