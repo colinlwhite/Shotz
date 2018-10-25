@@ -47,6 +47,12 @@
             "Name": "Red Bicyle Coffee",
             "Address": "4013 Whites Drive, Pell City, AL 35128",
             "Time": "Evening"
+        },
+        {
+            "Image": "https://metroscap.com/black-and-white-photography/los-angeles/-500-1x-Hollywood.jpg",
+            "Name": "Red Bicyle Coffee",
+            "Address": "4013 Whites Drive, Pell City, AL 35128",
+            "Time": "Afternoon"
         }
     ]
 }

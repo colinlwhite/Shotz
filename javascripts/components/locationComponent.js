@@ -18,11 +18,29 @@ const printLocals = (arrayOfLocals) => {
 };
 
 $("#morningButton").on('click', (e) => {
-  console.log(e);
+  console.log(e); // Making sure the click logs out 
   // $("h4").filter(":contains('Afternoon')").remove(); // Removes the h4 text only 
   //$("#Afternoon").remove(); // Only removes one card or so I thought
   $("#Afternoon, #AfterDark, #Evening").remove();
 }); 
+
+$("#afternoonButton").on('click', (e) => {
+  $("#Morning, #AfterDark, #Evening").remove();
+}); 
+
+$("#eveningButton").on('click', (e) => {
+  $("#Afternoon, #AfterDark, #Morning").remove();
+}); 
+
+$("#afterDarkButton").on('click', (e) => {
+  $("#Afternoon, #Morning, #Evening").remove();
+}); 
+
+// const sortLocals = () => {
+//   if ()
+// }
+
+
 
 export {printLocals}
 
