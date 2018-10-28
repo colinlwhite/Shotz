@@ -21,11 +21,12 @@ $("#morningButton").on('click', (e) => {
   console.log(e); // Making sure the click logs out 
   // $("h4").filter(":contains('Afternoon')").remove(); // Removes the h4 text only 
   //$("#Afternoon").remove(); // Only removes one card or so I thought
-  $("#Afternoon, #AfterDark, #Evening").remove();
+  $("#Afternoon, #AfterDark, #Evening").detach();
 }); 
 
 $("#afternoonButton").on('click', (e) => {
-  $("#Morning, #AfterDark, #Evening").remove();
+  $("#Morning, #AfterDark, #Evening").hide();
+  $("#afternoonButton").show();
 }); 
 
 $("#eveningButton").on('click', (e) => {
