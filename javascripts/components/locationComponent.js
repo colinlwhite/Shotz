@@ -41,5 +41,5 @@ const printLocals = (arrayOfLocals) => {
     $("#locationDiv").append(domString);
 };
 
-export {printLocals}
+export {printLocals, shootTimeClass}
 

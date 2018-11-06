@@ -1,6 +1,6 @@
 // Attaching all event listeners
 
-import {printLocals}
+import {printLocals, shootTimeClass} from './components/locationComponent.js';
 
 const allButton = $('#all'); 
 const morningButton = $('#morning'); 
@@ -27,7 +27,7 @@ const morningButtonEvent = () => {
 };
 
 morningButtonEvent();
-//allButtonEvent();
+allButtonEvent();
 
 
 // $("#morningButton").on('click', (e) => {
