@@ -22,7 +22,13 @@
             "Image": "https://metroscap.com/black-and-white-photography/los-angeles/-500-1x-Hollywood.jpg",
             "Name": "Red Bicyle Coffee",
             "Address": "4013 Whites Drive, Pell City, AL 35128",
-            "Time": "After Dark"
+            "Time": "AfterDark"
+        },
+        {
+            "Image": "https://metroscap.com/black-and-white-photography/los-angeles/-500-1x-Hollywood.jpg",
+            "Name": "Red Bicyle Coffee",
+            "Address": "4013 Whites Drive, Pell City, AL 35128",
+            "Time": "Afternoon"
         },
         {
             "Image": "https://metroscap.com/black-and-white-photography/los-angeles/-500-1x-Hollywood.jpg",
@@ -34,19 +40,19 @@
             "Image": "https://metroscap.com/black-and-white-photography/los-angeles/-500-1x-Hollywood.jpg",
             "Name": "Red Bicyle Coffee",
             "Address": "4013 Whites Drive, Pell City, AL 35128",
-            "Time": "Morning"
+            "Time": "AfterDark"
         },
         {
             "Image": "https://metroscap.com/black-and-white-photography/los-angeles/-500-1x-Hollywood.jpg",
             "Name": "Red Bicyle Coffee",
             "Address": "4013 Whites Drive, Pell City, AL 35128",
-            "Time": "Morning"
+            "Time": "Evening"
         },
         {
             "Image": "https://metroscap.com/black-and-white-photography/los-angeles/-500-1x-Hollywood.jpg",
             "Name": "Red Bicyle Coffee",
             "Address": "4013 Whites Drive, Pell City, AL 35128",
-            "Time": "Morning"
+            "Time": "Afternoon"
         }
     ]
 }
