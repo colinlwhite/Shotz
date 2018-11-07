@@ -37,21 +37,6 @@ allButtonEvent();
 //     //$("#Afternoon").remove(); // Only removes one card or so I thought
 //     $("#Afternoon, #AfterDark, #Evening").detach();
 //   }); 
-  
 
-//   $("#afternoonButton").on('click', () => {
-//     $("#Morning, #AfterDark, #Evening").hide();
-//     $("#afternoonButton").show();
-//   }); 
-  
-
-//   $("#eveningButton").on('click', () => {
-//     $("#Afternoon, #AfterDark, #Morning").remove();
-//   }); 
-  
-
-//   $("#afterDarkButton").on('click', () => {
-//     $("#Afternoon, #Morning, #Evening").remove();
-//   }); 
   
 
