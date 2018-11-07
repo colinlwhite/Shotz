@@ -26,8 +26,8 @@ const printLocals = (arrayOfLocals) => {
     let domString = '';
     arrayOfLocals.forEach((local) => {
       domString += `
-      <div class="location d-inline-block">
-        <div class="card m-4" style="width: 18rem; ${shootTimeClass(local.Time)}">
+      <div class="d-inline-block location">
+        <div class="card m-4 ${shootTimeClass(local.Time)}" style="width: 18rem;">
            <img class="card-img-top" src="${local.Image}" alt="Card image cap">
            <div class="card-body text-center">
               <h3 class="card-text">${local.Name}</h3>

@@ -19,6 +19,7 @@ const allButtonEvent = () => {
 
 const morningButtonEvent = () => {
     morningButton.on('click', () => {
+        console.log("it's working");
         $('.btn-warning').closest('.location').show();
         $('.btn-primary').closest('.location').hide();
         $('.btn-success').closest('.location').hide();
