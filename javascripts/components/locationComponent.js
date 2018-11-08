@@ -4,16 +4,16 @@ const shootTimeClass = (shootTime) => {
     let selectedClass = '';
     switch (shootTime) {
       case 'Morning': 
-        selectedClass = 'btn-warning'; 
+        selectedClass = 'bg-secondary'; 
         break;
       case 'Afternoon': 
-        selectedClass = 'btn-primary'; 
+        selectedClass = 'bg-success'; 
         break;
       case 'Evening': 
-        selectedClass = 'btn-success'; 
+        selectedClass = 'bg-info'; 
         break;
       case 'AfterDark': 
-        selectedClass = 'btn-danger'; 
+        selectedClass = 'bg-danger'; 
         break;
       default: 
         selectedClass = '';
@@ -26,7 +26,8 @@ const printLocals = (arrayOfLocals) => {
     let domString = '';
     arrayOfLocals.forEach((local) => {
       domString += `
-      <div class="d-inline-block location">
+      <div class="location d-inline-block">
+      <div id="hoping"> 
         <div class="card m-4 ${shootTimeClass(local.Time)}" style="width: 18rem;">
            <img class="card-img-top" src="${local.Image}" alt="Card image cap">
            <div class="card-body text-center">
@@ -35,6 +36,7 @@ const printLocals = (arrayOfLocals) => {
               <h4 class="card-text">${local.Time}</h4>
            </div>
         </div> 
+        </div>
       </div>
           `; 
 })
