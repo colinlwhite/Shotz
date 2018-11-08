@@ -10,33 +10,34 @@ const afterDarkButton = $('#afterDark');
 
 const allButtonEvent = () => {
     allButton.on('click', () => {
-        $('.btn-warning').closest('.location').show();
-        $('.btn-primary').closest('.location').show();
-        $('.btn-success').closest('.location').show();
-        $('.btn-danger').closest('.location').show();
+        console.log("All Button is working");
+        $('.bg-secondary').closest('.location').show();
+        $('.bg-success').closest('.location').show();
+        $('.bg-info').closest('.location').show();
+        $('.bg-danger').closest('.location').show();
     });
 };
 
 const morningButtonEvent = () => {
     morningButton.on('click', () => {
-        console.log("it's working");
-        $('.btn-warning').closest('.location').show();
-        $('.btn-primary').closest('.location').hide();
-        $('.btn-success').closest('.location').hide();
-        $('.btn-danger').closest('.location').hide();
+        console.log("Morning Button is working");
+        $('.bg-secondary').closest('#hoping').show();
+        $('.bg-success').closest('#hoping').hide();
+        $('.bg-info').closest('#hoping').hide();
+        $('.bg-danger').closest('#hoping').hide();
     });
 };
 
+
+const setEvents = () => {
+    allButtonEvent();
 morningButtonEvent();
-allButtonEvent();
+}
+
+export {setEvents}
 
 
-// $("#morningButton").on('click', (e) => {
-//     console.log(e); // Making sure the click logs out 
-//     // $("h4").filter(":contains('Afternoon')").remove(); // Removes the h4 text only 
-//     //$("#Afternoon").remove(); // Only removes one card or so I thought
-//     $("#Afternoon, #AfterDark, #Evening").detach();
-//   }); 
+
 
   
 
