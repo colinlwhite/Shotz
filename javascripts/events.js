@@ -1,7 +1,5 @@
 // Attaching all event listeners
 
-import {printLocals, shootTimeClass} from './components/locationComponent.js';
-
 const allButton = $('#all'); 
 const morningButton = $('#morning'); 
 const afternoonButton = $('#afternoon'); 
@@ -10,7 +8,6 @@ const afterDarkButton = $('#afterDark');
 
 const allButtonEvent = () => {
     allButton.on('click', () => {
-        console.log("All Button is working");
         $('.bg-secondary').closest('.location').show();
         $('.bg-success').closest('.location').show();
         $('.bg-info').closest('.location').show();
@@ -20,19 +17,47 @@ const allButtonEvent = () => {
 
 const morningButtonEvent = () => {
     morningButton.on('click', () => {
-        console.log("Morning Button is working");
-        $('.bg-secondary').closest('#hoping').show();
-        $('.bg-success').closest('#hoping').hide();
-        $('.bg-info').closest('#hoping').hide();
-        $('.bg-danger').closest('#hoping').hide();
+        $('.bg-secondary').closest('.location').show();
+        $('.bg-success').closest('.location').hide();
+        $('.bg-info').closest('.location').hide();
+        $('.bg-danger').closest('.location').hide();
     });
 };
 
+const afternoonButtonEvent = () => {
+    afternoonButton.on('click', () => {
+        $('.bg-secondary').closest('.location').hide();
+        $('.bg-success').closest('.location').show();
+        $('.bg-info').closest('.location').hide();
+        $('.bg-danger').closest('.location').hide();
+    });
+};
+
+const eveningButtonEvent = () => {
+    eveningButton.on('click', () => {
+        $('.bg-secondary').closest('.location').hide();
+        $('.bg-success').closest('.location').hide();
+        $('.bg-info').closest('.location').show();
+        $('.bg-danger').closest('.location').hide();
+    });
+};
+
+const afterDarkButtonEvent = () => {
+    afterDarkButton.on('click', () => {
+        $('.bg-secondary').closest('.location').hide();
+        $('.bg-success').closest('.location').hide();
+        $('.bg-info').closest('.location').hide();
+        $('.bg-danger').closest('.location').show();
+    });
+};
 
 const setEvents = () => {
     allButtonEvent();
 morningButtonEvent();
-}
+afternoonButtonEvent();
+eveningButtonEvent();
+afterDarkButtonEvent();
+};
 
 export {setEvents}
 
