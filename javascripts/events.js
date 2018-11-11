@@ -59,10 +59,25 @@ eveningButtonEvent();
 afterDarkButtonEvent();
 };
 
+let userInput = $('#textInput');
+const userMessage = () => {
+    $(userInput).on('keypress', (e) => {
+        const keyCode = e.which;
+        if (keyCode == 13) {
+            for (let i = 0; i < $('.location').length; i++) {
+                console.log($('.location').text());
+            }
+            console.log(userInput.val()); // .val() is a jQuery method. It's in the documentation under "ATTRIBUTES / CSS" 
+        }
+    })
+};
+
+userMessage();
+
 export {setEvents}
 
 
 
-
+// right click on anything logged out in the console and
   
 
