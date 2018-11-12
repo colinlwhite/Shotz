@@ -59,10 +59,32 @@ eveningButtonEvent();
 afterDarkButtonEvent();
 };
 
+jQuery.expr[":"].icontains = function(obj, index, meta) {
+    return (
+      jQuery(obj)
+        .text()
+        .toUpperCase()
+        .indexOf(meta[3].toUpperCase()) >= 0
+    );
+  };
+
+const searchBar = () => { // declaring the function
+    $('#textInput').on('keyup', e => { // The keyup event is fired when a key is released.
+        if (e.keyCode === 13) { // if the key they pressed equals 13
+            const userInput = $(e.target).val(); // the value of where the user clicked? 
+            $(".div-search").not(`:icontains(${userInput})`).closest('.location').hide();
+            $(`.div-search:icontains(${userInput})`).closest('.location').show();
+            $(e.target).val("");
+        }
+    });
+};
+
+searchBar();
+
 export {setEvents}
 
 
 
-
+// right click on anything logged out in the console and
   
 
