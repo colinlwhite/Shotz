@@ -59,20 +59,27 @@ eveningButtonEvent();
 afterDarkButtonEvent();
 };
 
-let userInput = $('#textInput');
-const userMessage = () => {
-    $(userInput).on('keypress', (e) => {
-        const keyCode = e.which;
-        if (keyCode == 13) {
-            for (let i = 0; i < $('.location').length; i++) {
-                console.log($('.location').text());
-            }
-            console.log(userInput.val()); // .val() is a jQuery method. It's in the documentation under "ATTRIBUTES / CSS" 
+jQuery.expr[":"].icontains = function(obj, index, meta) {
+    return (
+      jQuery(obj)
+        .text()
+        .toUpperCase()
+        .indexOf(meta[3].toUpperCase()) >= 0
+    );
+  };
+
+const searchBar = () => { // declaring the function
+    $('#textInput').on('keyup', e => { // The keyup event is fired when a key is released.
+        if (e.keyCode === 13) { // if the key they pressed equals 13
+            const userInput = $(e.target).val(); // the value of where the user clicked? 
+            $(".div-search").not(`:icontains(${userInput})`).closest('.location').hide();
+            $(`.div-search:icontains(${userInput})`).closest('.location').show();
+            $(e.target).val("");
         }
-    })
+    });
 };
 
-userMessage();
+searchBar();
 
 export {setEvents}
 

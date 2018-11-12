@@ -31,8 +31,8 @@ const printLocals = (arrayOfLocals) => {
         <div class="card m-4 ${shootTimeClass(local.Time)}" style="width: 18rem;">
            <img class="card-img-top" src="${local.Image}" alt="Card image cap">
            <div class="card-body text-center">
-              <h3 class="card-text">${local.Name}</h3>
-              <h3 class="card-text">${local.Address}</h3>
+              <h3 class="card-text div-search">${local.Name}</h3>
+              <h3 class="card-text div-search">${local.Address}</h3>
               <h4 class="card-text">${local.Time}</h4>
            </div>
         </div> 
